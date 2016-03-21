@@ -2,5 +2,4 @@
 
 echo "Welcome to Git Katas"
 echo ""
-echo "To start with the first kata, type in:"
-echo "git checkout kata1"
+echo "To start with the first kata, switch to kata1 branch and run ./start"
