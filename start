@@ -1,5 +1,26 @@
 #!/bin/bash
 
+setupOrigin() {
+  git clone --mirror https://github.com/danielsiwiec/git-kata.git .origin
+  git remote remove origin
+  git remote add origin .origin
+  git fetch
+  git branch --set-upstream-to=origin/kata1 kata1
+}
+
+setupJohnny() {
+  git clone https://github.com/danielsiwiec/git-kata.git .johnny
+  cd .johnny
+  git remote remove origin
+  git remote add origin ../.origin
+  git fetch
+  git checkout kata1
+  cd ..
+}
+
+setupOrigin()
+setupJohnny()
+
 echo "Welcome to Git Katas"
 echo ""
 echo "To start with the first kata, switch to kata1 branch and run ./start"
