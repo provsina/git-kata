@@ -18,8 +18,8 @@ setupJohnny() {
   cd ..
 }
 
-setupOrigin()
-setupJohnny()
+setupOrigin > /dev/null 2>&1
+setupJohnny > /dev/null 2>&1
 
 echo "Welcome to Git Katas"
 echo ""
