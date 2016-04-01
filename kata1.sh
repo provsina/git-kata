@@ -1,16 +1,9 @@
 #!/bin/bash
 
-commitWithJohnny() {
-  cd .johnny
-  echo "I am johnny 5" > src/johnny.js
-  git add .
-  git commit -m "Johnny's commit"
-  git push
-  cd ..
-}
+source johnny.sh
 
 editFile() {
-  echo "sky is the limit" >> src/app.js
+  echo $1 >> src/app.js
 }
 
 echo "KATA 1 - STASHING FILES"
@@ -19,5 +12,5 @@ echo "SCENARIO DESCRIPTION"
 echo "You made local changes to some files. Pull remote
 changes without committing your local changes"
 
-commitWithJohnny > /dev/null 2>&1
-editFile > /dev/null 2>&1
+commitWithJohnny "I am johnny 5" src/johnny.js "Johnny's commit" > /dev/null 2>&1
+editFile "sky is the limit" > /dev/null 2>&1

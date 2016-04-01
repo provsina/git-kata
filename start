@@ -1,14 +1,6 @@
 #!/bin/bash
 
-setupJohnny() {
-  mkdir .johnny
-  cp -r .git .johnny
-  cd .johnny
-  git config user.name Johnny
-  git config user.email johnny@who.com
-  git reset --hard
-  cd ..
-}
+source johnny.sh
 
 setupJohnny > /dev/null 2>&1
 
