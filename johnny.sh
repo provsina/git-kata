@@ -1,3 +1,6 @@
+resetRepo > /dev/null 2>&1
+setupJohnny > /dev/null 2>&1
+
 resetRepo() {
   rm -rf src
   mkdir src

@@ -2,9 +2,6 @@
 
 source johnny.sh
 
-resetRepo > /dev/null 2>&1
-setupJohnny > /dev/null 2>&1
-
 editFile() {
   echo $1 >> src/app.js
 }
