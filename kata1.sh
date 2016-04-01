@@ -2,7 +2,7 @@
 
 commitWithJohnny() {
   cd .johnny
-  echo "console.log('I am johnny')" > src/johnny.js
+  echo "I am johnny 5" > src/johnny.js
   git add .
   git commit -m "Johnny's commit"
   git push
@@ -10,7 +10,7 @@ commitWithJohnny() {
 }
 
 editFile() {
-  echo "console.log('sky is the limit')" >> src/app.js
+  echo "sky is the limit" >> src/app.js
 }
 
 echo "KATA 1 - STASHING FILES"
