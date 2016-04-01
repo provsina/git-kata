@@ -1,3 +1,12 @@
+resetRepo() {
+  rm -rf src
+  mkdir src
+  echo "Hello world" > src/app.js
+  git add .
+  git commit -m "Resetting repo"
+  git push
+}
+
 setupJohnny() {
   rm -rf .johnny
   mkdir .johnny

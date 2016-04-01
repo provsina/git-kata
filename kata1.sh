@@ -2,6 +2,7 @@
 
 source johnny.sh
 
+resetRepo
 setupJohnny > /dev/null 2>&1
 
 editFile() {
