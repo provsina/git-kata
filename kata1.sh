@@ -2,7 +2,7 @@
 
 source johnny.sh
 
-resetRepo
+resetRepo > /dev/null 2>&1
 setupJohnny > /dev/null 2>&1
 
 editFile() {
@@ -10,7 +10,7 @@ editFile() {
 }
 
 echo "KATA 1 - STASHING FILES"
-echo
+echo ""
 echo "SCENARIO DESCRIPTION"
 echo "You made local changes to some files. Pull remote
 changes without committing your local changes"
