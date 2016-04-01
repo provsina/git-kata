@@ -2,6 +2,8 @@
 
 source johnny.sh
 
+setupJohnny > /dev/null 2>&1
+
 editFile() {
   echo $1 >> src/app.js
 }

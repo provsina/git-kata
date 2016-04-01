@@ -1,4 +1,5 @@
 setupJohnny() {
+  rm -rf .johnny
   mkdir .johnny
   cp -r .git .johnny
   cd .johnny

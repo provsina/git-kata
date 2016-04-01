@@ -1,9 +1,5 @@
 #!/bin/bash
 
-source johnny.sh
-
-setupJohnny > /dev/null 2>&1
-
 echo "Welcome to Git Katas"
 echo ""
 echo "To start with the first kata, run ./kata1.sh"
