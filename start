@@ -1,9 +1,10 @@
 #!/bin/bash
 
 setupJohnny() {
-  git clone https://github.com/danielsiwiec/git-kata.git .johnny
+  mkdir .johnny
+  cp -r .git .johnny
   cd .johnny
-  git checkout kata1
+  git reset --hard
   cd ..
 }
 
