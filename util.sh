@@ -1,13 +1,10 @@
-resetRepo > /dev/null 2>&1
-setupJohnny > /dev/null 2>&1
-
 resetRepo() {
   rm -rf src
   mkdir src
   echo "Hello world" > src/app.js
   git add .
   git commit -m "Resetting repo"
-  git push
+  git push -f
 }
 
 setupJohnny() {
@@ -38,3 +35,9 @@ commitChange() {
   editFile $1
   git commit -am $2
 }
+
+echo "Resetting repo"
+resetRepo > /dev/null 2>&1
+
+echo "Setting up Johnny"
+setupJohnny > /dev/null 2>&1
