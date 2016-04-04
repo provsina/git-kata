@@ -1,10 +1,6 @@
 #!/bin/bash
 
-source johnny.sh
-
-editFile() {
-  echo $1 >> src/app.js
-}
+source util.sh
 
 echo "KATA 1 - STASHING FILES"
 echo ""

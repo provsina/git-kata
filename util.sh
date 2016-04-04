@@ -29,3 +29,12 @@ commitWithJohnny() {
   git push
   cd ..
 }
+
+editFile() {
+  echo $1 >> src/app.js
+}
+
+commitChange() {
+  editFile $1
+  git commit -am $2
+}
